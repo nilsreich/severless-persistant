@@ -11,16 +11,10 @@
 <body>
     <button onclick="test()">um 1 erhöhen</button>
     <a href="/api/hello">Insgesamte Klicks anzeigen</a>
-    <button onclick="reset()">reset</button>
     <script>
         function test() {
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", "/api/hello?1", true);
-            xhttp.send();
-        }
-                function reset() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "/api/hello?reset", true);
             xhttp.send();
         }
     </script>
